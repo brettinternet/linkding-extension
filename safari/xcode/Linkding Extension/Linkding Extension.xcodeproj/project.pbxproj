@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BB93228309017A700FA35EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB93227309017A700FA35EC /* AppDelegate.swift */; };
+		8BB9322A309017A700FA35EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB93229309017A700FA35EC /* SceneDelegate.swift */; };
+		8BB9322D309017A700FA35EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9322B309017A700FA35EC /* LaunchScreen.storyboard */; };
+		8BB93230309017A700FA35EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9322E309017A700FA35EC /* Main.storyboard */; };
+		8BB93239309017A700FA35EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB93238309017A700FA35EC /* AppDelegate.swift */; };
+		8BB9323C309017A700FA35EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9323A309017A700FA35EC /* Main.storyboard */; };
+		8BB93243309017A700FA35EC /* Linkding Extension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8BB93242309017A700FA35EC /* Linkding Extension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8BB9324D309017A700FA35EC /* Linkding Extension Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8BB9324C309017A700FA35EC /* Linkding Extension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8BB93252309017A700FA35EC /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93217309017A700FA35EC /* Main.html */; };
+		8BB93253309017A700FA35EC /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93217309017A700FA35EC /* Main.html */; };
+		8BB93254309017A700FA35EC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93219309017A700FA35EC /* Icon.png */; };
+		8BB93255309017A700FA35EC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93219309017A700FA35EC /* Icon.png */; };
+		8BB93256309017A700FA35EC /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9321A309017A700FA35EC /* Style.css */; };
+		8BB93257309017A700FA35EC /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9321A309017A700FA35EC /* Style.css */; };
+		8BB93258309017A700FA35EC /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9321B309017A700FA35EC /* Script.js */; };
+		8BB93259309017A700FA35EC /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9321B309017A700FA35EC /* Script.js */; };
+		8BB9325A309017A700FA35EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9321C309017A700FA35EC /* ViewController.swift */; };
+		8BB9325B309017A700FA35EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9321C309017A700FA35EC /* ViewController.swift */; };
+		8BB9325C309017A700FA35EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9321D309017A700FA35EC /* Assets.xcassets */; };
+		8BB9325D309017A700FA35EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9321D309017A700FA35EC /* Assets.xcassets */; };
+		8BB9325E309017A700FA35EC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9321F309017A700FA35EC /* SafariWebExtensionHandler.swift */; };
+		8BB9325F309017A700FA35EC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9321F309017A700FA35EC /* SafariWebExtensionHandler.swift */; };
+		8BB93277309017A700FA35EC /* options in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93271309017A700FA35EC /* options */; };
+		8BB93278309017A700FA35EC /* popup in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93272309017A700FA35EC /* popup */; };
+		8BB93279309017A700FA35EC /* styles in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93273309017A700FA35EC /* styles */; };
+		8BB9327A309017A700FA35EC /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93274309017A700FA35EC /* icons */; };
+		8BB9327B309017A700FA35EC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93275309017A700FA35EC /* manifest.json */; };
+		8BB9327C309017A700FA35EC /* build in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93276309017A700FA35EC /* build */; };
+		8BB9327D309017A700FA35EC /* options in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93271309017A700FA35EC /* options */; };
+		8BB9327E309017A700FA35EC /* popup in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93272309017A700FA35EC /* popup */; };
+		8BB9327F309017A700FA35EC /* styles in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93273309017A700FA35EC /* styles */; };
+		8BB93280309017A700FA35EC /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93274309017A700FA35EC /* icons */; };
+		8BB93281309017A700FA35EC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93275309017A700FA35EC /* manifest.json */; };
+		8BB93282309017A700FA35EC /* build in Resources */ = {isa = PBXBuildFile; fileRef = 8BB93276309017A700FA35EC /* build */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BB93244309017A700FA35EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BB93211309017A700FA35EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB93241309017A700FA35EC;
+			remoteInfo = "Linkding Extension Extension (iOS)";
+		};
+		8BB9324E309017A700FA35EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BB93211309017A700FA35EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB9324B309017A700FA35EC;
+			remoteInfo = "Linkding Extension Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BB93265309017A700FA35EC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				8BB93243309017A700FA35EC /* Linkding Extension Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+		8BB9326C309017A700FA35EC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				8BB9324D309017A700FA35EC /* Linkding Extension Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8BB93218309017A700FA35EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		8BB93219309017A700FA35EC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8BB9321A309017A700FA35EC /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		8BB9321B309017A700FA35EC /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		8BB9321C309017A700FA35EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BB9321D309017A700FA35EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BB9321F309017A700FA35EC /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		8BB93224309017A700FA35EC /* Linkding Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linkding Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB93227309017A700FA35EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BB93229309017A700FA35EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8BB9322C309017A700FA35EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BB9322F309017A700FA35EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BB93231309017A700FA35EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB93236309017A700FA35EC /* Linkding Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linkding Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB93238309017A700FA35EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BB9323B309017A700FA35EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BB9323D309017A700FA35EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB93242309017A700FA35EC /* Linkding Extension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Linkding Extension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB93247309017A700FA35EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB9324C309017A700FA35EC /* Linkding Extension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Linkding Extension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB93251309017A700FA35EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB93271309017A700FA35EC /* options */ = {isa = PBXFileReference; lastKnownFileType = folder; name = options; path = ../../../../dist/safari/options; sourceTree = "<group>"; };
+		8BB93272309017A700FA35EC /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popup; path = ../../../../dist/safari/popup; sourceTree = "<group>"; };
+		8BB93273309017A700FA35EC /* styles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = styles; path = ../../../../dist/safari/styles; sourceTree = "<group>"; };
+		8BB93274309017A700FA35EC /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../../dist/safari/icons; sourceTree = "<group>"; };
+		8BB93275309017A700FA35EC /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../../dist/safari/manifest.json; sourceTree = "<group>"; };
+		8BB93276309017A700FA35EC /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = build; path = ../../../../dist/safari/build; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BB93221309017A700FA35EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		8BB93233309017A700FA35EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		8BB9323F309017A700FA35EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		8BB93249309017A700FA35EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BB93210309017A700FA35EC = {
+			isa = PBXGroup;
+			children = (
+				8BB93215309017A700FA35EC /* Shared (App) */,
+				8BB9321E309017A700FA35EC /* Shared (Extension) */,
+				8BB93226309017A700FA35EC /* iOS (App) */,
+				8BB93237309017A700FA35EC /* macOS (App) */,
+				8BB93246309017A700FA35EC /* iOS (Extension) */,
+				8BB93250309017A700FA35EC /* macOS (Extension) */,
+				8BB93225309017A700FA35EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BB93215309017A700FA35EC /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8BB9321C309017A700FA35EC /* ViewController.swift */,
+				8BB9321D309017A700FA35EC /* Assets.xcassets */,
+				8BB93216309017A700FA35EC /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		8BB93216309017A700FA35EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BB93217309017A700FA35EC /* Main.html */,
+				8BB93219309017A700FA35EC /* Icon.png */,
+				8BB9321A309017A700FA35EC /* Style.css */,
+				8BB9321B309017A700FA35EC /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BB9321E309017A700FA35EC /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8BB93270309017A700FA35EC /* Resources */,
+				8BB9321F309017A700FA35EC /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		8BB93225309017A700FA35EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BB93224309017A700FA35EC /* Linkding Extension.app */,
+				8BB93236309017A700FA35EC /* Linkding Extension.app */,
+				8BB93242309017A700FA35EC /* Linkding Extension Extension.appex */,
+				8BB9324C309017A700FA35EC /* Linkding Extension Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BB93226309017A700FA35EC /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8BB93227309017A700FA35EC /* AppDelegate.swift */,
+				8BB93229309017A700FA35EC /* SceneDelegate.swift */,
+				8BB9322B309017A700FA35EC /* LaunchScreen.storyboard */,
+				8BB9322E309017A700FA35EC /* Main.storyboard */,
+				8BB93231309017A700FA35EC /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		8BB93237309017A700FA35EC /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8BB93238309017A700FA35EC /* AppDelegate.swift */,
+				8BB9323A309017A700FA35EC /* Main.storyboard */,
+				8BB9323D309017A700FA35EC /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		8BB93246309017A700FA35EC /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8BB93247309017A700FA35EC /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		8BB93250309017A700FA35EC /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8BB93251309017A700FA35EC /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		8BB93270309017A700FA35EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BB93271309017A700FA35EC /* options */,
+				8BB93272309017A700FA35EC /* popup */,
+				8BB93273309017A700FA35EC /* styles */,
+				8BB93274309017A700FA35EC /* icons */,
+				8BB93275309017A700FA35EC /* manifest.json */,
+				8BB93276309017A700FA35EC /* build */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BB93223309017A700FA35EC /* Linkding Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB93266309017A700FA35EC /* Build configuration list for PBXNativeTarget "Linkding Extension (iOS)" */;
+			buildPhases = (
+				8BB93220309017A700FA35EC /* Sources */,
+				8BB93221309017A700FA35EC /* Frameworks */,
+				8BB93222309017A700FA35EC /* Resources */,
+				8BB93265309017A700FA35EC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BB93245309017A700FA35EC /* PBXTargetDependency */,
+			);
+			name = "Linkding Extension (iOS)";
+			productName = "Linkding Extension (iOS)";
+			productReference = 8BB93224309017A700FA35EC /* Linkding Extension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BB93235309017A700FA35EC /* Linkding Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB9326D309017A700FA35EC /* Build configuration list for PBXNativeTarget "Linkding Extension (macOS)" */;
+			buildPhases = (
+				8BB93232309017A700FA35EC /* Sources */,
+				8BB93233309017A700FA35EC /* Frameworks */,
+				8BB93234309017A700FA35EC /* Resources */,
+				8BB9326C309017A700FA35EC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BB9324F309017A700FA35EC /* PBXTargetDependency */,
+			);
+			name = "Linkding Extension (macOS)";
+			productName = "Linkding Extension (macOS)";
+			productReference = 8BB93236309017A700FA35EC /* Linkding Extension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BB93241309017A700FA35EC /* Linkding Extension Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB93262309017A700FA35EC /* Build configuration list for PBXNativeTarget "Linkding Extension Extension (iOS)" */;
+			buildPhases = (
+				8BB9323E309017A700FA35EC /* Sources */,
+				8BB9323F309017A700FA35EC /* Frameworks */,
+				8BB93240309017A700FA35EC /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Linkding Extension Extension (iOS)";
+			productName = "Linkding Extension Extension (iOS)";
+			productReference = 8BB93242309017A700FA35EC /* Linkding Extension Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8BB9324B309017A700FA35EC /* Linkding Extension Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB93269309017A700FA35EC /* Build configuration list for PBXNativeTarget "Linkding Extension Extension (macOS)" */;
+			buildPhases = (
+				8BB93248309017A700FA35EC /* Sources */,
+				8BB93249309017A700FA35EC /* Frameworks */,
+				8BB9324A309017A700FA35EC /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Linkding Extension Extension (macOS)";
+			productName = "Linkding Extension Extension (macOS)";
+			productReference = 8BB9324C309017A700FA35EC /* Linkding Extension Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BB93211309017A700FA35EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					8BB93223309017A700FA35EC = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					8BB93235309017A700FA35EC = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					8BB93241309017A700FA35EC = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					8BB9324B309017A700FA35EC = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = 8BB93214309017A700FA35EC /* Build configuration list for PBXProject "Linkding Extension" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BB93210309017A700FA35EC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8BB93225309017A700FA35EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BB93223309017A700FA35EC /* Linkding Extension (iOS) */,
+				8BB93235309017A700FA35EC /* Linkding Extension (macOS) */,
+				8BB93241309017A700FA35EC /* Linkding Extension Extension (iOS) */,
+				8BB9324B309017A700FA35EC /* Linkding Extension Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BB93222309017A700FA35EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				8BB93254309017A700FA35EC /* Icon.png in Resources */,
+				8BB9322D309017A700FA35EC /* LaunchScreen.storyboard in Resources */,
+				8BB93252309017A700FA35EC /* Main.html in Resources */,
+				8BB93258309017A700FA35EC /* Script.js in Resources */,
+				8BB9325C309017A700FA35EC /* Assets.xcassets in Resources */,
+				8BB93230309017A700FA35EC /* Main.storyboard in Resources */,
+				8BB93256309017A700FA35EC /* Style.css in Resources */,
+			);
+		};
+		8BB93234309017A700FA35EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				8BB93255309017A700FA35EC /* Icon.png in Resources */,
+				8BB93257309017A700FA35EC /* Style.css in Resources */,
+				8BB9323C309017A700FA35EC /* Main.storyboard in Resources */,
+				8BB93259309017A700FA35EC /* Script.js in Resources */,
+				8BB9325D309017A700FA35EC /* Assets.xcassets in Resources */,
+				8BB93253309017A700FA35EC /* Main.html in Resources */,
+			);
+		};
+		8BB93240309017A700FA35EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				8BB9327D309017A700FA35EC /* options in Resources */,
+				8BB93280309017A700FA35EC /* icons in Resources */,
+				8BB93281309017A700FA35EC /* manifest.json in Resources */,
+				8BB93282309017A700FA35EC /* build in Resources */,
+				8BB9327F309017A700FA35EC /* styles in Resources */,
+				8BB9327E309017A700FA35EC /* popup in Resources */,
+			);
+		};
+		8BB9324A309017A700FA35EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				8BB93277309017A700FA35EC /* options in Resources */,
+				8BB9327A309017A700FA35EC /* icons in Resources */,
+				8BB9327B309017A700FA35EC /* manifest.json in Resources */,
+				8BB9327C309017A700FA35EC /* build in Resources */,
+				8BB93279309017A700FA35EC /* styles in Resources */,
+				8BB93278309017A700FA35EC /* popup in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BB93220309017A700FA35EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				8BB9325A309017A700FA35EC /* ViewController.swift in Sources */,
+				8BB93228309017A700FA35EC /* AppDelegate.swift in Sources */,
+				8BB9322A309017A700FA35EC /* SceneDelegate.swift in Sources */,
+			);
+		};
+		8BB93232309017A700FA35EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				8BB9325B309017A700FA35EC /* ViewController.swift in Sources */,
+				8BB93239309017A700FA35EC /* AppDelegate.swift in Sources */,
+			);
+		};
+		8BB9323E309017A700FA35EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				8BB9325E309017A700FA35EC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+		8BB93248309017A700FA35EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				8BB9325F309017A700FA35EC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BB93245309017A700FA35EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB93241309017A700FA35EC /* Linkding Extension Extension (iOS) */;
+			targetProxy = 8BB93244309017A700FA35EC /* PBXContainerItemProxy */;
+		};
+		8BB9324F309017A700FA35EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB9324B309017A700FA35EC /* Linkding Extension Extension (macOS) */;
+			targetProxy = 8BB9324E309017A700FA35EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BB93217309017A700FA35EC /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB93218309017A700FA35EC /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		8BB9322B309017A700FA35EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB9322C309017A700FA35EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8BB9322E309017A700FA35EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB9322F309017A700FA35EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BB9323A309017A700FA35EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB9323B309017A700FA35EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BB93260309017A700FA35EC /* Debug configuration for PBXProject "Linkding Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BB93261309017A700FA35EC /* Release configuration for PBXProject "Linkding Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8BB93263309017A700FA35EC /* Debug configuration for PBXNativeTarget "Linkding Extension Extension (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Linkding Extension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.15.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloud.brett.linkding-extension.Extension";
+				PRODUCT_NAME = "Linkding Extension Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BB93264309017A700FA35EC /* Release configuration for PBXNativeTarget "Linkding Extension Extension (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Linkding Extension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.15.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloud.brett.linkding-extension.Extension";
+				PRODUCT_NAME = "Linkding Extension Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BB93267309017A700FA35EC /* Debug configuration for PBXNativeTarget "Linkding Extension (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Linkding Extension";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.15.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloud.brett.linkding-extension";
+				PRODUCT_NAME = "Linkding Extension";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BB93268309017A700FA35EC /* Release configuration for PBXNativeTarget "Linkding Extension (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Linkding Extension";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.15.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloud.brett.linkding-extension";
+				PRODUCT_NAME = "Linkding Extension";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BB9326A309017A700FA35EC /* Debug configuration for PBXNativeTarget "Linkding Extension Extension (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Linkding Extension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.15.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloud.brett.linkding-extension.Extension";
+				PRODUCT_NAME = "Linkding Extension Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8BB9326B309017A700FA35EC /* Release configuration for PBXNativeTarget "Linkding Extension Extension (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Linkding Extension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.15.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloud.brett.linkding-extension.Extension";
+				PRODUCT_NAME = "Linkding Extension Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8BB9326E309017A700FA35EC /* Debug configuration for PBXNativeTarget "Linkding Extension (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Linkding Extension";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.15.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloud.brett.linkding-extension";
+				PRODUCT_NAME = "Linkding Extension";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8BB9326F309017A700FA35EC /* Release configuration for PBXNativeTarget "Linkding Extension (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Linkding Extension";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.15.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloud.brett.linkding-extension";
+				PRODUCT_NAME = "Linkding Extension";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BB93214309017A700FA35EC /* Build configuration list for PBXProject "Linkding Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB93260309017A700FA35EC /* Debug configuration for PBXProject "Linkding Extension" */,
+				8BB93261309017A700FA35EC /* Release configuration for PBXProject "Linkding Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		8BB93262309017A700FA35EC /* Build configuration list for PBXNativeTarget "Linkding Extension Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB93263309017A700FA35EC /* Debug configuration for PBXNativeTarget "Linkding Extension Extension (iOS)" */,
+				8BB93264309017A700FA35EC /* Release configuration for PBXNativeTarget "Linkding Extension Extension (iOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		8BB93266309017A700FA35EC /* Build configuration list for PBXNativeTarget "Linkding Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB93267309017A700FA35EC /* Debug configuration for PBXNativeTarget "Linkding Extension (iOS)" */,
+				8BB93268309017A700FA35EC /* Release configuration for PBXNativeTarget "Linkding Extension (iOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		8BB93269309017A700FA35EC /* Build configuration list for PBXNativeTarget "Linkding Extension Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB9326A309017A700FA35EC /* Debug configuration for PBXNativeTarget "Linkding Extension Extension (macOS)" */,
+				8BB9326B309017A700FA35EC /* Release configuration for PBXNativeTarget "Linkding Extension Extension (macOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		8BB9326D309017A700FA35EC /* Build configuration list for PBXNativeTarget "Linkding Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB9326E309017A700FA35EC /* Debug configuration for PBXNativeTarget "Linkding Extension (macOS)" */,
+				8BB9326F309017A700FA35EC /* Release configuration for PBXNativeTarget "Linkding Extension (macOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BB93211309017A700FA35EC /* Project object */;
+	validationLevel = 1;
+}

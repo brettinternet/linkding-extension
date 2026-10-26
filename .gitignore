@@ -124,3 +124,5 @@ dist
 /build
 /web-ext-artifacts
 .web-extension-id
+/.build
+xcuserdata/

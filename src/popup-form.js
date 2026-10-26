@@ -126,8 +126,8 @@ export class PopupForm extends LitElement {
       this.title = browserMetadata.title;
       this.description = browserMetadata.description;
     } else {
-      this.title = serverMetadata.metadata.title;
-      this.description = serverMetadata.metadata.description;
+      this.title = serverMetadata?.metadata.title ?? "";
+      this.description = serverMetadata?.metadata.description ?? "";
     }
 
     this.shared = this.configuration.shareSelected;

@@ -146,7 +146,7 @@ export function showBadge(tabId) {
   const browser = getBrowser();
   const action = browser.browserAction || browser.action;
   action.setBadgeText({ text: "★", tabId: tabId });
-  action.setBadgeTextColor({ color: "#FFE234", tabId: tabId });
+  action.setBadgeTextColor?.({ color: "#FFE234", tabId: tabId });
   action.setBadgeBackgroundColor({
     color: "rgba(100,100,100,1)",
     tabId: tabId,
@@ -163,7 +163,7 @@ export function showSuccessBadge(tabId) {
   const browser = getBrowser();
   const action = browser.browserAction || browser.action;
   action.setBadgeText({ text: "✔", tabId: tabId });
-  action.setBadgeTextColor({ color: "#FFFFFF", tabId: tabId });
+  action.setBadgeTextColor?.({ color: "#FFFFFF", tabId: tabId });
   action.setBadgeBackgroundColor({
     color: "rgba(76,175,80,1)",
     tabId: tabId,

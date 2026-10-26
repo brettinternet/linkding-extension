@@ -43,7 +43,7 @@ async function setDynamicBadge(tabId, tabMetadata) {
 
 /* Omnibox / Search integration */
 
-browser.omnibox.onInputStarted.addListener(async () => {
+browser.omnibox?.onInputStarted.addListener(async () => {
   const isReady = await initApi();
   const description = isReady
     ? "Search bookmarks in linkding"
@@ -52,7 +52,7 @@ browser.omnibox.onInputStarted.addListener(async () => {
   browser.omnibox.setDefaultSuggestion({ description });
 });
 
-browser.omnibox.onInputChanged.addListener((text, suggest) => {
+browser.omnibox?.onInputChanged.addListener((text, suggest) => {
   if (!api) {
     return;
   }
@@ -71,7 +71,7 @@ browser.omnibox.onInputChanged.addListener((text, suggest) => {
     });
 });
 
-browser.omnibox.onInputEntered.addListener(async (content, disposition) => {
+browser.omnibox?.onInputEntered.addListener(async (content, disposition) => {
   if (!hasCompleteConfiguration || !content) {
     return;
   }
@@ -126,14 +126,14 @@ browser.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
 /* Context Menu */
 
 browser.runtime.onInstalled.addListener(() => {
-  browser.contextMenus.create({
+  browser.contextMenus?.create({
     id: "save-to-linkding",
     title: "Save to linkding",
     contexts: ["link"],
   });
 });
 
-browser.contextMenus.onClicked.addListener(async (info, tab) => {
+browser.contextMenus?.onClicked.addListener(async (info, tab) => {
   if (info.menuItemId === "save-to-linkding") {
     await saveToLinkding(info.linkUrl, tab);
   }

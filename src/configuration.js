@@ -1,4 +1,4 @@
-import { getStorageItem, setStorageItem } from "./browser";
+import { getStorageItem, isSafari, setStorageItem } from "./browser";
 
 const CONFIG_KEY = "ld_ext_config";
 const DEFAULTS = {
@@ -8,7 +8,8 @@ const DEFAULTS = {
   useBrowserMetadata: false,
   runSinglefile: false,
   precacheEnabled: false,
-  closeAddBookmarkWindowOnSave: false,
+  // The iOS popup is a sheet that otherwise has to be dismissed manually
+  closeAddBookmarkWindowOnSave: isSafari(),
   closeAddBookmarkWindowOnSaveMs: 500,
 };
 

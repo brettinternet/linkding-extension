@@ -16,6 +16,10 @@ export async function getCurrentTabInfo() {
   };
 }
 
+export function isSafari() {
+  return getBrowser().runtime.getURL("").startsWith("safari-web-extension://");
+}
+
 function isFirefox() {
   const runtime = getBrowser().runtime;
   if (runtime && typeof runtime.getURL === "function") {

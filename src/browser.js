@@ -137,9 +137,16 @@ export function setStorageItem(key, value) {
   return storage.set({ [key]: value });
 }
 
-export function openOptions() {
-  getBrowser().runtime.openOptionsPage();
-  window.close();
+// Safari grants host access per site, so request the linkding server (and all
+// sites when precaching) instead of relying on install-time permissions. This
+// must be called before any await in a user input handler.
+export async function requestHostPermissions(config) {
+  const { protocol, hostname } = new URL(config.baseUrl);
+  const origins = [`${protocol}//${hostname}/*`];
+  if (config.precacheEnabled) {
+    origins.push("http://*/*", "https://*/*");
+  }
+  return getBrowser().permissions.request({ origins });
 }
 
 export function showBadge(tabId) {

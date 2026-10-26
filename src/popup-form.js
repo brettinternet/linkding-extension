@@ -3,7 +3,6 @@ import "./tag-autocomplete.js";
 import {
   getBrowserMetadata,
   getCurrentTabInfo,
-  openOptions,
   showBadge,
   runSinglefile,
   removeBadge,
@@ -244,7 +243,7 @@ export class PopupForm extends LitElement {
 
   handleOptions(e) {
     e.preventDefault();
-    openOptions();
+    this.dispatchEvent(new CustomEvent("open-options"));
   }
 
   handleOpenLinkding(e) {

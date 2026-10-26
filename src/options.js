@@ -1,10 +1,12 @@
 import { LitElement, html } from "lit";
 import { getConfiguration, saveConfiguration } from "./configuration.js";
 import { LinkdingApi } from "./linkding.js";
+import { requestHostPermissions } from "./browser.js";
 import { icons } from "./icons";
 
 export class Options extends LitElement {
   static properties = {
+    cancelable: { type: Boolean },
     baseUrl: { type: String, state: true },
     token: { type: String, state: true },
     default_tags: { type: String, state: true },
@@ -21,6 +23,7 @@ export class Options extends LitElement {
 
   constructor() {
     super();
+    this.cancelable = false;
     this.baseUrl = "";
     this.token = "";
     this.default_tags = "";
@@ -75,12 +78,15 @@ export class Options extends LitElement {
       closeAddBookmarkWindowOnSaveMs: this.closeAddBookmarkWindowOnSaveMs,
     };
 
+    // A denied request surfaces as a failed connection test
+    await requestHostPermissions(config).catch(() => {});
     const testResult = await new LinkdingApi(config).testConnection(config);
 
     if (testResult) {
       await saveConfiguration(config);
       this.isError = false;
       this.isSuccess = true;
+      this.dispatchEvent(new CustomEvent("options-saved"));
     } else {
       this.isSuccess = false;
       this.isError = true;
@@ -311,6 +317,18 @@ export class Options extends LitElement {
           : ""}
 
         <div class="button-row">
+          ${this.cancelable
+            ? html`
+                <button
+                  type="button"
+                  class="btn mr-auto"
+                  @click="${() =>
+                    this.dispatchEvent(new CustomEvent("options-cancel"))}"
+                >
+                  Cancel
+                </button>
+              `
+            : ""}
           ${this.isSuccess
             ? html`
                 <div class="status text-success mr-2">

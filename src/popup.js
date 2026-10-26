@@ -1,6 +1,5 @@
 import { LitElement, html } from "lit";
 import "./popup-form.js";
-import "./popup-intro.js";
 import { getConfiguration, isConfigurationComplete } from "./configuration.js";
 import { LinkdingApi } from "./linkding.js";
 
@@ -9,6 +8,7 @@ export class Popup extends LitElement {
     hasCompleteConfiguration: { type: Boolean, state: true },
     configuration: { type: Object, state: true },
     api: { type: Object, state: true },
+    optionsVisible: { type: Boolean, state: true },
   };
 
   constructor() {
@@ -16,6 +16,7 @@ export class Popup extends LitElement {
     this.hasCompleteConfiguration = true;
     this.configuration = null;
     this.api = null;
+    this.optionsVisible = false;
   }
 
   createRenderRoot() {
@@ -36,16 +37,30 @@ export class Popup extends LitElement {
     }
   }
 
+  async handleOptionsSaved() {
+    await this.init();
+    this.optionsVisible = false;
+  }
+
   render() {
+    // Settings render in the popup because Safari opens options pages in a
+    // new tab, which dismisses the popup on iOS
+    if (!this.hasCompleteConfiguration || this.optionsVisible) {
+      return html`
+        <ld-options
+          .cancelable="${this.hasCompleteConfiguration}"
+          @options-saved="${this.handleOptionsSaved}"
+          @options-cancel="${() => (this.optionsVisible = false)}"
+        ></ld-options>
+      `;
+    }
+
     return html`
       <ld-popup-form
         .configuration="${this.configuration}"
         .api="${this.api}"
+        @open-options="${() => (this.optionsVisible = true)}"
       ></ld-popup-form>
-
-      ${!this.hasCompleteConfiguration
-        ? html` <ld-popup-intro></ld-popup-intro> `
-        : ""}
     `;
   }
 }

@@ -1,0 +1,79 @@
+/* Touch devices, e.g. Safari on iOS, where the popup is a full-width sheet */
+@media (pointer: coarse) {
+  :root {
+    /* 16px text keeps iOS from zooming into focused inputs */
+    --font-size: 0.8rem;
+    --font-size-sm: 0.75rem;
+    /* 44px touch targets */
+    --control-size: 2.2rem;
+    --control-size-sm: 2.2rem;
+  }
+
+  body {
+    min-width: 0;
+  }
+
+  .bookmark-form {
+    form {
+      max-width: none;
+    }
+
+    .title-row {
+      align-items: center;
+
+      button {
+        min-width: var(--control-size);
+        min-height: var(--control-size);
+      }
+    }
+
+    /* Keep Save reachable while the form scrolls */
+    .footer {
+      position: sticky;
+      bottom: 0;
+      padding-bottom: var(--unit-4);
+      background: var(--body-color);
+    }
+
+    .footer .button-row {
+      gap: var(--unit-2);
+    }
+
+    .footer .btn-primary {
+      flex: 1;
+    }
+  }
+
+  /* Show tag suggestions as a row of chips instead of a dropdown, which the
+     keyboard can cover */
+  .form-autocomplete .menu.open {
+    position: static;
+    display: flex;
+    gap: var(--unit-2);
+    overflow-x: auto;
+    max-height: none;
+    margin-top: var(--unit-2);
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    transform: none;
+    animation: none;
+
+    .menu-item {
+      flex: none;
+      margin: 0;
+      padding: 0 !important;
+    }
+
+    .menu-item > a {
+      display: flex;
+      align-items: center;
+      min-height: var(--control-size);
+      margin: 0;
+      padding: 0 var(--unit-3);
+      border: var(--border-width) solid var(--border-color);
+      border-radius: var(--control-size);
+    }
+  }
+}

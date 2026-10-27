@@ -12,7 +12,8 @@
   },
 
   "background": {
-    "scripts": ["build/background.js"]
+    "scripts": ["build/background.js"],
+    "persistent": false
   },
 
   "action": {

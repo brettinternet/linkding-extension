@@ -138,6 +138,8 @@ export class TagAutocomplete extends LitElement {
             type="text"
             autocomplete="off"
             autocapitalize="off"
+            autocorrect="off"
+            spellcheck="false"
             .value="${this.value}"
             @input="${this.handleInput}"
             @keydown="${this.handleKeyDown}"

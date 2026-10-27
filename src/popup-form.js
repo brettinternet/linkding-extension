@@ -279,7 +279,10 @@ export class PopupForm extends LitElement {
           <div class="has-icon-right">
             <input
               class="form-input"
-              type="text"
+              type="url"
+              autocapitalize="off"
+              autocorrect="off"
+              spellcheck="false"
               id="input-url"
               placeholder="URL"
               .value="${this.url}"

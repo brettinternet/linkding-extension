@@ -115,7 +115,10 @@ export class Options extends LitElement {
           >
           <input
             class="form-input"
-            type="text"
+            type="url"
+            autocapitalize="off"
+            autocorrect="off"
+            spellcheck="false"
             id="input-base-url"
             placeholder="https://linkding.mydomain.com"
             .value="${this.baseUrl}"
@@ -151,6 +154,9 @@ export class Options extends LitElement {
           <input
             class="form-input"
             type="text"
+            autocapitalize="off"
+            autocorrect="off"
+            spellcheck="false"
             id="input-default-tags"
             placeholder=""
             .value="${this.default_tags}"

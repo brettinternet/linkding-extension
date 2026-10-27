@@ -1,4 +1,4 @@
-/* Touch devices, e.g. Safari on iOS, where the popup is a full-width sheet */
+/* Touch devices, e.g. Safari on iOS and iPadOS */
 @media (pointer: coarse) {
   :root {
     /* 16px text keeps iOS from zooming into focused inputs */
@@ -9,8 +9,12 @@
     --control-size-sm: 2.2rem;
   }
 
-  body {
-    min-width: 0;
+  /* On phones the popup is a sheet as wide as the screen. On iPad it is a
+     popover sized by its content, so it keeps the minimum width. */
+  @media (max-device-width: 600px) {
+    body {
+      min-width: 0;
+    }
   }
 
   .bookmark-form {

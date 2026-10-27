@@ -2,7 +2,7 @@
 
 ## Name (30)
 
-Linkding Bookmarker
+Linkding Extension
 
 ## Subtitle (30)
 
@@ -14,7 +14,7 @@ Bookmark any page in Safari to your self-hosted linkding server, with tag sugges
 
 ## Description (4000)
 
-Linkding Bookmarker adds a Safari extension for linkding, the self-hosted bookmark manager.
+Linkding Extension brings linkding, the self-hosted bookmark manager, to Safari.
 
 Tap the extension in Safari to bookmark the page you're on. The title and description fill in automatically, and tags you already use are suggested as you type.
 
@@ -60,7 +60,7 @@ Free, all territories.
 
 This app is a Safari extension for linkding, a self-hosted bookmark manager. To test it:
 
-1. Enable the extension. On iOS go to Settings › Apps › Safari › Extensions › Linkding. On Mac go to Safari › Settings › Extensions.
+1. Enable the extension. On iOS go to Settings › Apps › Safari › Extensions › Linkding Extension. On Mac go to Safari › Settings › Extensions.
 2. In Safari, open the extension, enter the server URL and API token below, and save. Allow access to the server when Safari asks.
 3. Open any web page, open the extension, and tap Save.
 

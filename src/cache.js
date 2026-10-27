@@ -32,7 +32,9 @@ export async function loadServerMetadata(url, precacheRequest = false) {
       if (tabMetadata.bookmark && !tabMetadata.bookmark.date_added) {
         tabMetadata.bookmark = await api.getBookmark(tabMetadata.bookmark.id);
       }
-      await cacheServerMetadata(tabMetadata);
+      // Safari can reject storage writes with a bogus quota error; the
+      // metadata is still usable without the cache
+      await cacheServerMetadata(tabMetadata).catch(console.error);
       return tabMetadata;
     } catch (e) {
       console.error(e);

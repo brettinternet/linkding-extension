@@ -30,6 +30,10 @@ Based on the open source linkding extension by Sascha Ißbrücker.
 
 linkding,bookmark,bookmarks,self-hosted,selfhosted,read later,tags,links,bookmark manager,save
 
+## Header and search results (iOS)
+
+Upload `header.png` as the header and check "Use header asset in search results". Re-render with `swift header.swift` from this directory.
+
 ## URLs
 
 - Support: https://github.com/brettinternet/linkding-extension/issues

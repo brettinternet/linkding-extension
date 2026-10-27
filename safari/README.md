@@ -29,9 +29,22 @@ Run the `Linkding Extension (iOS)` or `Linkding Extension (macOS)` scheme, then 
 
 ## Release
 
-1. Set the development team for all four targets in Xcode.
-2. Bump `version` in `safari/manifest.json` and `MARKETING_VERSION` in the Xcode project to match, then increment `CURRENT_PROJECT_VERSION`.
-3. Run `safari/build.sh`, then Product › Archive for each platform and upload to App Store Connect.
+1. Bump `version` in `safari/manifest.json` and commit.
+2. Tag and push: `git tag v<version> && git push origin v<version>`.
+3. When the Release workflow finishes, submit the iOS and macOS builds for review in App Store Connect.
+
+The workflow runs `safari/release.sh`. It sets the app version from `safari/manifest.json` and the build number from the current UTC time. It uploads both platforms to App Store Connect and attaches a notarized Developer ID build of the macOS app to the GitHub release.
+
+Repository secrets:
+
+| Secret | Value |
+|---|---|
+| `ASC_KEY_ID`, `ASC_ISSUER_ID` | App Store Connect Team API key with the Admin role |
+| `ASC_KEY_P8` | Contents of that key's `.p8` file |
+| `DEVELOPER_ID_P12` | Base64 of the exported Developer ID Application certificate and private key |
+| `DEVELOPER_ID_P12_PASSWORD` | The `.p12` export password |
+
+Privacy policy for App Store Connect: [PRIVACY.md](PRIVACY.md).
 
 ## Syncing upstream
 
